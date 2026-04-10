@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Jardin</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+  <header class="site-header">
+    <div class="header-content">
+      <h1>🌿 Mon Jardin</h1>
+      <p>Créez, plantez et arrosez votre jardin interactif</p>
+    </div>
+  </header>
+
+  <main class="app">
+    <div class="controls">
+      <button id="addPlantBtn">Planter</button>
+      <button id="waterAllBtn">Arroser tout</button>
+      <button id="clearGardenBtn">Vider le jardin</button>
+    </div>
+
+    <p class="info">
+      Cliquez sur <strong>Planter</strong> pour ajouter une plante.
+      Cliquez sur une plante pour l’arroser individuellement.
+    </p>
+
+    <div id="garden" class="garden"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 - Application de jardin interactif</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
